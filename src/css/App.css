@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+  background-color: #1D242E;
+}
+
+.App-logo {
+  height: 64px;
+  pointer-events: none;
+  margin-top: 4px;
+  margin-left: 16px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s ease-in-out alternate;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+.container {
+  perspective: 500px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.movie-container {
+  margin: 30px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.showcase .seat:not(.reserved):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0,0,0,0.1);
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+
+}
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: thin solid rgba(255,255,255,0.8);
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.reserved {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2){
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2){
+  margin-left: 18px;
+}
+
+.seat:not(.reserved):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.row{
+  display: flex;
+}
+
+.screen {
+  background-color: #ffffff;
+  height: 70px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  transform: rotateX(-45deg);
+  -webkit-transform: rotateX(-45deg);
+  -moz-transform: rotateX(-45deg);
+  -ms-transform: rotateX(-45deg);
+  -o-transform: rotateX(-45deg);
+  -webkit-box-shadow: 0 3px 10px 0 rgba(255,255,255,0.7);
+  -moz-box-shadow: 0 3px 10px 0 rgba(255,255,255,0.7);
+  box-shadow: 0 3px 10px 0 rgba(255,255,255,0.7);
+}
+
+
+/* InfoPanel */
+
+span {
+  color: #6feaf6;
+}
